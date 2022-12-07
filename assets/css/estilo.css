@@ -1,0 +1,181 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: #333;
+	box-sizing: border-box;
+font-family: 'Nerko One', cursive;
+
+}
+body {
+
+	background: #201b2c;
+}
+button {
+	background: whitesmoke;
+	color: #201b2c;
+	cursor: pointer;
+	padding:0.3rem 0.6rem;
+	font-size: 1rem;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s;
+	display: flex;
+	border: 1px solid black;
+
+}
+
+button:hover {
+
+	background: #51edaf;
+	border-radius: 40%;
+}
+button:hover > i {
+	color: whitesmoke;
+}
+
+button i {
+color: #201b2c;
+font-weight: 500;
+pointer-events: none;
+
+}
+input,select {
+	padding: 0.25rem 0.5rem;
+
+
+}
+/*Cabeçalho*/
+
+.mcontainer {
+	max-width: 450px;
+	margin: 3rem auto 0;
+	background: rgba(255,255,255,0.15);
+box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+backdrop-filter: blur(14.8px);
+-webkit-backdrop-filter: blur(14.8px);
+	border-radius: 15px;
+	padding: 1.5rem;
+	border: 1px solid whitesmoke;
+
+}
+.mcontainer header {
+
+	text-align: center;
+	padding: 0 1rem 1rem;
+	border-bottom:1px solid gray ;
+
+}
+/*formulário*/
+
+#forms, #form-editar {
+	padding: 1rem;
+	border-bottom: 1px solid whitesmoke;
+}
+
+#forms h4,
+ #form-editar h4 {
+	margin-bottom: 0.5rem;
+	font-weight: 300;
+	color: #51edaf;
+
+}
+
+.form-entrada {
+	display: flex;
+}
+#cancelar-btn {
+	margin-top: 1rem;
+
+}
+
+button #cancelar{
+	border: black;
+}
+.hide {
+	display: none;
+}
+/*barra de busca*/
+#barradebusca {
+margin-top: -30px;
+padding: 1rem;
+border-bottom: 1px solid whitesmoke;
+display: flex;
+
+}
+#barradebusca h4 {
+	margin-bottom: .5rem;
+		font-weight: 300;
+		color: #51edaf;
+		 text-shadow: 2px 2px 4px #000000;
+}
+#pesquisar {
+padding-right: 1rem;
+margin-right: 1rem;
+display: flex;
+flex-direction: column;
+width: 300%;
+}
+#pesquisar form {
+	display: flex;
+}
+#pesquisar input {
+	width: 100%;
+	margin-right:0.3rem ;
+}
+#filtro {
+width: 35%;
+display: flex;
+flex-direction: column;
+
+
+}
+
+#filtro select {
+	flex: 1;
+}
+
+/*lista*/
+
+.tarefas {
+display: flex;
+justify-content: space-around;
+padding: 1rem;
+border-bottom: 1pix solid whitesmoke;
+transition: 0.3s;
+
+}
+.tarefas h4 {
+	flex: 1;
+		font-weight: 300;
+		color: #51edaf;
+		font-size: 18px;
+}
+.tarefas button {
+	margin-left: 3px;
+}
+
+.finalizado {
+	background:#51edaf;
+	border-radius: 5px;
+}
+.finalizado h4 {
+	color: floralwhite;
+	text-decoration: line-through;
+	font-style: italic;
+		font-weight: 300;
+		 text-shadow: 2px 2px 4px #000000;
+}
+
+.tarefas button > i {
+
+color:#453a5f;
+
+}
+
+.tarefas button:hover {
+
+	filter: invert(1);
+	border-radius: 50%;
+	transition: 0.5s;
+	transform:translate(2px);
+}
